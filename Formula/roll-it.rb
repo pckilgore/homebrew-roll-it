@@ -5,6 +5,12 @@ class RollIt < Formula
   sha256 "cdad790d0a450ca22d26ac4471f45cb7d68d072d05b164f70df6c53106b2dcbd"
   license "MIT"
 
+  bottle do
+    root_url "https://github.com/pckilgore/homebrew-roll-it/releases/download/roll-it-2.1.0"
+    sha256 cellar: :any_skip_relocation, catalina:     "fe50d52f0712032d6ad293896c36680c0ca1543ac03ccc06c9a9f6c6e0764053"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "5429f76cc03ece8b280af5cd1161e8f6ea656bb9fd8973f9f770b6f9686e0454"
+  end
+
   depends_on "go" => :build
 
   def install
