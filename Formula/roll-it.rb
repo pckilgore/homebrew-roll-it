@@ -7,8 +7,9 @@ class RollIt < Formula
 
   bottle do
     root_url "https://github.com/pckilgore/homebrew-roll-it/releases/download/roll-it-2.1.0"
-    sha256 cellar: :any_skip_relocation, catalina:     "fe50d52f0712032d6ad293896c36680c0ca1543ac03ccc06c9a9f6c6e0764053"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "5429f76cc03ece8b280af5cd1161e8f6ea656bb9fd8973f9f770b6f9686e0454"
+    sha256 cellar: :any_skip_relocation, arm64_big_sur: "1b2a78e2d8e7c6396a9ffc67d1d794e6910e7c6263dcd1126e57b48b0864845a"
+    sha256 cellar: :any_skip_relocation, catalina:      "fe50d52f0712032d6ad293896c36680c0ca1543ac03ccc06c9a9f6c6e0764053"
+    sha256 cellar: :any_skip_relocation, x86_64_linux:  "5429f76cc03ece8b280af5cd1161e8f6ea656bb9fd8973f9f770b6f9686e0454"
   end
 
   depends_on "go" => :build
